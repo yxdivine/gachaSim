@@ -3,15 +3,15 @@ package yxdivine.gachaSim.rest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
-import yxdivine.gachaSim.basic.RandomHelper;
+import yxdivine.gachaSim.basic.RandomService;
 
 @RestController
 public class GachaService {
     @Autowired
-    RandomHelper random;
+    RandomService random;
 
     @PostMapping(value = "/roll")
-    public String roll() {
-        return "hello world " + random.random(100);
+    public int roll() {
+        return random.random(100);
     }
 }

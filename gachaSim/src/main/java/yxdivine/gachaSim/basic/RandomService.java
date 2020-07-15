@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import java.util.Random;
 
 @Component
-public class RandomHelper {
+public class RandomService {
 
     public Random random = new Random();
 

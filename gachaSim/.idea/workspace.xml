@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f019077-9bc8-4a69-87b9-f70d993a12f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/yxdivine/gachaSim/basic/RandomHelper.java" afterDir="false" />
+    <list default="true" id="3f019077-9bc8-4a69-87b9-f70d993a12f8" name="Default Changelist" comment="project scaffold of gacha sim">
+      <change afterPath="$PROJECT_DIR$/src/main/java/yxdivine/gachaSim/banner/SimplePullBanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/yxdivine/gachaSim/AppTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gachaSim.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gachaSim.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
@@ -79,9 +100,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_2_7_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_26.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_26.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/yxdivine/gachaSim/service/GachaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/yxdivine/gachaSim/service/GachaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/yxdivine/gachaSim/GachaSimApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/yxdivine/gachaSim/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/yxdivine/gachaSim/basic/RandomHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/yxdivine/gachaSim/basic/RandomService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/yxdivine/gachaSim/rest/GachaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/yxdivine/gachaSim/rest/GachaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/yxdivine/gachaSim/GachaSimApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,28 +127,27 @@
         <option name="userSettingsFile" value="C:\Users\xinda\.m2\settings.xml" />
       </MavenGeneralSettings>
     </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectId" id="1edPtIFDq987mWOfCRrSQCgxbCS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager">
-    <configuration name="GachaSimApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="yxdivine.gachaSim.GachaSimApplication" />
+  <component name="RunManager" selected="Application.GachaSimApplication">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="yxdivine.gachaSim.App" />
       <module name="gachaSim" />
       <extension name="coverage">
         <pattern>
@@ -137,23 +159,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppTests.basicRandomTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gachaSim" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="yxdivine.gachaSim.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="yxdivine.gachaSim" />
+      <option name="MAIN_CLASS_NAME" value="yxdivine.gachaSim.AppTests" />
+      <option name="METHOD_NAME" value="basicRandomTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.GachaSimApplication" />
+        <item itemvalue="JUnit.AppTests.basicRandomTest" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -168,11 +195,22 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="872" y="362" key="#Project_Structure" timestamp="1594822292491">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="362" key="#Project_Structure/0.0.2560.1400@0.0.2560.1400" timestamp="1594822292491" />
+    <state x="304" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594831696973">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="304" y="188" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1594831696973" />
+    <state x="537" y="58" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594831714001">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="537" y="58" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1594831714001" />
     <state x="817" y="282" key="CommitChangelistDialog2" timestamp="1594828850433">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -181,38 +219,54 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="458" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1594822108427" />
-    <state width="2517" height="492" key="GridCell.Tab.0.bottom" timestamp="1594828442681">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1638" height="364" key="GridCell.Tab.0.bottom" timestamp="1594833247002">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1638" height="364" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1594833247002" />
     <state width="2517" height="492" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1594828442681" />
-    <state width="2517" height="492" key="GridCell.Tab.0.center" timestamp="1594828442681">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1638" height="364" key="GridCell.Tab.0.center" timestamp="1594833247000">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1638" height="364" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1594833247000" />
     <state width="2517" height="492" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1594828442681" />
-    <state width="2517" height="492" key="GridCell.Tab.0.left" timestamp="1594828442681">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1638" height="364" key="GridCell.Tab.0.left" timestamp="1594833246999">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1638" height="364" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1594833246999" />
     <state width="2517" height="492" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1594828442681" />
-    <state width="2517" height="492" key="GridCell.Tab.0.right" timestamp="1594828442681">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1638" height="364" key="GridCell.Tab.0.right" timestamp="1594833247001">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1638" height="364" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1594833247001" />
     <state width="2517" height="492" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1594828442681" />
-    <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1594828442510">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom" timestamp="1594833246824">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1594833246824" />
     <state width="2517" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1594828442510" />
-    <state width="2517" height="492" key="GridCell.Tab.1.center" timestamp="1594828442510">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom/0.23.1680.942@0.23.1680.942" timestamp="1594832989130" />
+    <state width="1638" height="364" key="GridCell.Tab.1.center" timestamp="1594833246823">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1594833246823" />
     <state width="2517" height="492" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1594828442510" />
-    <state width="2517" height="492" key="GridCell.Tab.1.left" timestamp="1594828442510">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1638" height="364" key="GridCell.Tab.1.center/0.23.1680.942@0.23.1680.942" timestamp="1594832989129" />
+    <state width="1638" height="364" key="GridCell.Tab.1.left" timestamp="1594833246822">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1594833246822" />
     <state width="2517" height="492" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1594828442510" />
-    <state width="2517" height="492" key="GridCell.Tab.1.right" timestamp="1594828442510">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state width="1638" height="364" key="GridCell.Tab.1.left/0.23.1680.942@0.23.1680.942" timestamp="1594832989127" />
+    <state width="1638" height="364" key="GridCell.Tab.1.right" timestamp="1594833246824">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1594833246824" />
     <state width="2517" height="492" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1594828442510" />
+    <state width="1638" height="364" key="GridCell.Tab.1.right/0.23.1680.942@0.23.1680.942" timestamp="1594832989129" />
+    <state x="378" y="188" key="Maven.ArtifactSearchDialog" timestamp="1594831507536">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="378" y="188" key="Maven.ArtifactSearchDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1594831507536" />
     <state x="783" y="345" key="SettingsEditor" timestamp="1594822153603">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
