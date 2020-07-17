@@ -1,28 +1,28 @@
 package yxdivine.gachaSim.banner;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Component;
 import yxdivine.gachaSim.basic.RandomService;
+import yxdivine.gachaSim.model.Banner;
 
-@RestController("/banner1")
-public class SimplePullBanner {
+@Component(StandardPullBanner.bannerId)
+public class StandardPullBanner implements Banner {
+    public static final String bannerId = "standard";
+
     @Autowired
     RandomService random;
 
     int[] chanceArray;
 
-    public SimplePullBanner() {
+    public StandardPullBanner() {
         this.chanceArray = new int[]{2, 8, 50, 40};
     }
 
-    @PostMapping("/pull")
     public int pull() {
         int rand = random.random(100);
         return getPullResult(rand);
     }
 
-    @PostMapping("/pull10")
     public int[] pull10() {
         int[] res = new int[10];
         for (int i = 0; i < 10; i++) {
@@ -39,5 +39,10 @@ public class SimplePullBanner {
             }
         }
         return chanceArray.length;
+    }
+
+    @Override
+    public String getBannerId() {
+        return "standard";
     }
 }
