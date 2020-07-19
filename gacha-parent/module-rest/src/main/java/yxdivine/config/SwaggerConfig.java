@@ -1,4 +1,4 @@
-package app;
+package yxdivine.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -23,10 +23,11 @@ public class SwaggerConfig {
                 .paths(PathSelectors.any()).build();
     }
 
+
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("API Doc")
-                .description("仿抽卡接口")
+                .title("API文档")
+                .description("接口")
                 .version("1.0")
                 .build();
     }

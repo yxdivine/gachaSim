@@ -1,3 +1,5 @@
+package yxdivine.util;
+
 import java.util.Random;
 
 public class RandomHelper {
@@ -10,7 +12,6 @@ public class RandomHelper {
     public RandomHelper(int seed) {
         random = new Random(seed);
     }
-
 
     public int getRandom(int range) {
         return random.nextInt(range);
