@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>${project.version}</version>
     <modules>
-        <module>basic</module>
+        <module>module-util</module>
         <module>module-rest</module>
     </modules>
 
@@ -20,4 +20,25 @@
     </properties>
 
 
+    <!-- Spring boot 父引用-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.1.RELEASE</version>
+    </parent>
+    <dependencies>
+        <!-- Spring boot 核心web-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+    </dependencies>
 </project>
