@@ -7,18 +7,11 @@
     <groupId>yxdivine</groupId>
     <artifactId>gacha-parent</artifactId>
     <packaging>pom</packaging>
-    <version>${project.version}</version>
+    <version>1.0-SNAPSHOT</version>
     <modules>
         <module>module-util</module>
         <module>module-rest</module>
     </modules>
-
-    <properties>
-
-        <project.version>1.0-SNAPSHOT</project.version>
-
-    </properties>
-
 
     <!-- Spring boot 父引用-->
     <parent>
