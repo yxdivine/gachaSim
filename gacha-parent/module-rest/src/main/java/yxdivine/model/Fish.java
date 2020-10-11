@@ -39,4 +39,14 @@ public class Fish {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    @Override
+    public String toString() {
+        return "Fish{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", value=" + value +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }
