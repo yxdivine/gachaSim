@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import yxdivine.model.Fish;
+import yxdivine.util.RandomHelper;
 
 import java.util.List;
 
@@ -11,9 +12,11 @@ import java.util.List;
 public class FishService {
     @Autowired
     List<Fish> fishList;
+    @Autowired
+    RandomHelper rand;
 
-    @PostMapping("/testfish")
-    public String test() {
-        return fishList.toString();
+    @PostMapping("/singleMo")
+    public Fish test() {
+        return fishList.get(rand.getRandom(fishList.size()));
     }
 }
